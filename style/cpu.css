@@ -1,0 +1,144 @@
+.logic {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	position: relative;
+	opacity: 0.9;
+}
+
+.logic:before {
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.logic:hover{
+	opacity: 1;
+}
+
+.logic.head:before {
+	background-image: url(img/logic-head.png);
+}
+.logic.body:before {
+	background-image:url(img/logic-body.png);
+}
+.logic.tail:before {
+	background-image:url(img/logic-tail.png);
+}
+.logic.something:before {
+	background-image:url(img/logic-something.png);
+}
+.logic.barier:before {
+	background-image:url(img/logic-barier.png);
+	filter: hue-rotate(43deg);
+}
+.logic.null:before {
+	background-image: linear-gradient(-15deg, transparent, rgba(255,255,255,0.2));
+	background-color: cornflowerblue;
+	box-shadow: .1vmin .1vmin .2vmin rgba(254, 255, 255, .5) inset, -.1vmin -.1vmin .2vmin rgba(0, 0, 0, .3) inset;
+
+	/*background-image:url(img/logic-null.png);
+	filter: hue-rotate(225deg);*/
+}
+
+.logic.self:before {
+	filter: hue-rotate(115deg);
+}
+
+.logic.enemy:before {
+	filter: hue-rotate(10deg);
+}
+
+.logic:after {
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.logic.not:after {
+	background-image: url(img/logic-not.png);
+	filter: hue-rotate(-85deg);
+}
+
+
+.logic.color {
+}
+
+.logic.color.group0 {
+}
+
+.logic.color.group1 {
+	background-color: #efa200;
+}
+
+.logic.color.group2 {
+	background-color: #0a709f;
+}
+
+.logic.color.group3 {
+	background-color: #ffffff;
+}
+
+.logic.color.group4 {
+	background-color: #209980;
+}
+
+.cpu-table {
+	border: 1.5vmin solid #908380;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 0.5vmin;
+	margin: 0.5vmin;
+	width: calc(100% - 1vmin);
+	height: calc(100% - 1vmin);
+}
+
+.cpu-and {
+	border-color: #c07370 !important;
+	background-color: #907370 !important;
+}
+
+.cpu-or {
+	border-color: #7083e0 !important;
+	background-color: #7083a0 !important;
+}
+
+div.cpu {
+	display: inline-block;
+	float: left;
+	clear: both;
+}
+
+.palette-table .logic {
+	width: 7vmin;
+	height: 7vmin;
+	opacity: 1;
+}
+
+.color-table .logic {
+	width: 7vmin;
+	height: 7vmin;
+	opacity: 1;
+}
+
+.logic-group {
+	width: 100%;
+	position: relative;
+	display: block;
+}
+
+.palette, .logic-groups {
+	display: inline-block;
+	float:left;
+	position: relative;
+}
